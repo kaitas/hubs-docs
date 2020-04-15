@@ -3,8 +3,10 @@ id: hubs-cloud-aws-domain-recipes
 title: Domain Recipes
 sidebar_label: Domain Recipes
 ---
+[Original](https://hubs.mozilla.com/docs/hubs-cloud-aws-domain-recipes.html)
 
-When creating your Hubs Cloud stack on AWS you will be asked to provide a number of domains:
+<!-- When creating your Hubs Cloud stack on AWS you will be asked to provide a number of domains: -->
+AWSでHubs Cloudスタックを作成する場合、いくつかのドメインを指定するよう求められます。
 
 - Your **Site Domain Name**
 - Your **Internal Domain**
