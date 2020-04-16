@@ -5,13 +5,6 @@ title: Optimizing Scenes
 
 ## パフォーマンスを改善する
 
-<!--
-## Improving Performance
-
-When building Hubs scenes, you'll most likely want them to perform well across a wide-range of devices. From high-powered wired-in VR headsets, to low-powered mobile phones; performance of a scene may vary based on the type of device and connection speed of a your visitors. 
-
-One way to improve performance for everyone is to reduce the complexity of a scene. This could involve reducing the number of objects in a scene or optimizing the assets you are using. In the following section we will briefly cover steps you can take to optimize your assets.
--->
 Hubsシーンを構築する場合、高火力な有線式VRヘッドセットや省電力の携帯電話といった多種多様なデバイス上で適切に実行される必要があります。
 シーンのパフォーマンスは、デバイスのタイプとビジターの接続速度に応じて異なる場合があります。
 
@@ -19,26 +12,34 @@ Hubsシーンを構築する場合、高火力な有線式VRヘッドセット�
 シーン内のオブジェクトの数を減らしたり、使用しているアセットを最適化したりすることで改善します。
 次のセクションでは、アセットを最適化するためにできる手順について簡単に説明します。
 
-### Measuring performance
+### パフォーマンスの測定
 
-To take a closer look at your scene's performance, you can open up the VR Status menu. Click on the FPS meter in the lower right hand corner on desktop (or in VR, type /vrstats into the chat box). This will show you additional information on the load time, number of triangles, and textures in your scene. 
+シーンのパフォーマンスを詳しく見るには、VR ステータスメニューを開きます。
+デスクトップの右下にある FPS メーターをクリックします（VR の場合はチャットボックスに /vrstats と入力します）。
+これにより、シーンのロード時間、三角形の数、テクスチャに関する追加情報が表示されます。
 
 <!-- Insert video of opening performance tools -->
 
-### Optimizing Images & Videos
+### 画像と動画の最適化
 
-Very large, detailed images and videos can reduce performance on the web. If you are including a lot of this type of media in your scene, you can do the following to maintain good performance.
+非常に大きく詳細な画像や動画は、ウェブ上でのパフォーマンスを低下させる可能性があります。シーンにこの種のメディアが多く含まれている場合、パフォーマンスを維持するために以下のことを行うことができます。
 
-* Reduce the dimensions of large images/video
-* Compress the files, use the "save for web" feature in Photoshop for images, or use an online image or video compression tool to reduce the file size
-* Try converting .png images to .jpeg, as these often have smaller file sizes.
-* Convert GIFs to video format, as they run more efficiently in Hubs.
+* 大きな画像/ビデオのサイズを小さくする
+* ファイルを圧縮する、画像の場合はPhotoshopの "web用に保存" 機能を使用する、またはオンライン画像や動画の圧縮ツールを使用してファイルサイズを縮小する。
+* .png 画像から .jpeg に変換してみてください。ファイルサイズが小さくなる場合があります。
+* GIF をビデオ形式に変換してください。Hubs内でより効果的に動作します。
 
-### Optimizing 3D Models
+### 3Dモデルの最適化
 
-Complex 3D models can cause performance challenges in your scenes. Two main factors contribute to an object's complexity, firstly, the texture assets in a model, secondly, the number of triangles in the model itself. Typically the more realistic a model appears, the more complex the model is (although this is not always the case). 
+複雑な3Dモデルは、シーン内でパフォーマンス問題を引き起こす可能性があります。
+オブジェクトの複雑性に関わる2つの要素がありますが、1つ目はモデル内のテクスチャアセット、
+2つ目は、モデル自体のポリゴンの数です。
+一般的に、モデルがよりリアルに見えるほど、モデルはより複雑になります（これは必ずしもそうとは限りませんが）。
 
-3D models found using the Sketchfab and Google Poly browser in Spoke and Hubs are already filtered based on objects' sizes/complexity. However, if you want to improve the performance of another downloadable model, you can either reduce the objects texture size, or you can reduce the number of triangles. You can use a tool like [Blender]() to do this. 
+SpokeやHubs内でSketchfabやGoogle Polyブラウザを使用して見つかる3Dモデルは、オブジェクトのサイズや複雑さに基づいて、すでにフィルタリングされています。
+しかし、別のダウンロード可能なモデルのパフォーマンスを向上させたい場合は、オブジェクトのテクスチャサイズを小さくするか、ポリゴンの数を減らすことで改善できます。
+これには [Blender]() のようなツールを使うことができます。
+
 
 #### Reduce texture size
 
