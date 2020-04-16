@@ -3,12 +3,21 @@ id: spoke-optimization
 title: Optimizing Scenes
 ---
 
+## パフォーマンスを改善する
+
+<!--
 ## Improving Performance
 
 When building Hubs scenes, you'll most likely want them to perform well across a wide-range of devices. From high-powered wired-in VR headsets, to low-powered mobile phones; performance of a scene may vary based on the type of device and connection speed of a your visitors. 
 
 One way to improve performance for everyone is to reduce the complexity of a scene. This could involve reducing the number of objects in a scene or optimizing the assets you are using. In the following section we will briefly cover steps you can take to optimize your assets.
+-->
+Hubsシーンを構築する場合、高火力な有線式VRヘッドセットや省電力の携帯電話といった多種多様なデバイス上で適切に実行される必要があります。
+シーンのパフォーマンスは、デバイスのタイプとビジターの接続速度に応じて異なる場合があります。
 
+あらゆるビジターにとってのパフォーマンスを向上させるひとつの方法は、シーンの複雑さを軽減することです。
+シーン内のオブジェクトの数を減らしたり、使用しているアセットを最適化したりすることで改善します。
+次のセクションでは、アセットを最適化するためにできる手順について簡単に説明します。
 
 ### Measuring performance
 
