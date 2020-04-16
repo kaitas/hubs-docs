@@ -1,6 +1,6 @@
 ---
 id: spoke-optimization
-title: Optimizing Scenes
+title: シーンを最適化する
 ---
 
 ## パフォーマンスを改善する
@@ -38,23 +38,23 @@ Hubsシーンを構築する場合、高火力な有線式VRヘッドセット�
 
 SpokeやHubs内でSketchfabやGoogle Polyブラウザを使用して見つかる3Dモデルは、オブジェクトのサイズや複雑さに基づいて、すでにフィルタリングされています。
 しかし、別のダウンロード可能なモデルのパフォーマンスを向上させたい場合は、オブジェクトのテクスチャサイズを小さくするか、ポリゴンの数を減らすことで改善できます。
-これには [Blender]() のようなツールを使うことができます。
+これには [Blender](https://www.blender.org/) のようなツールを使うことができます。
 
+#### テクスチャサイズを小さくする
 
-#### Reduce texture size
+glbモデルの画像テクスチャのサイズを小さくするには、[GLTFファイルに変換](https://github.com/KhronosGroup/glTF#converters-importers-and-exporters)して、すべてのテクスチャファイルが入った一つのフォルダがあるようにして、Photoshopのようなツールを使って画像テクスチャのサイズを小さくします（例えば画像サイズを半分にしたり、4分の1にしたりします）。
 
-To reduce the image texture size of a glb model, you can either [covert to a gltf file](), so that there is a folder with all the texture files and reduce the size of the image textures using a tool like photoshop (reduce the size of the images by half, or by a quarter for example). 
+また、[Blenderでテクスチャのサイズを最適化するためにできる他のことを動画で紹介しています](https://www.youtube.com/watch?v=6uhAp1m1SXQ)。
 
-We've also made a [video of other things you can do to optimize the size of your textures in Blender](https://www.youtube.com/watch?v=6uhAp1m1SXQ).
+#### ポリゴンの数を減らす
 
-#### Reduce number of triangles
+モデルに対してどれぐらいのポリゴン数が理想的なのか？黄金律はありませんが、（Hubsにおいては）数十万ポリゴンではなく、数万個ポリゴンのモデルを使用することをお勧めします。多くの複雑な3Dモデルでは、モデルの見た目に大きな影響を与えることなく、ポリゴンの数を減らすことができます。
+Blenderではメッシュデシメーションツール（Mesh Decimation tool）を使って行うことができます。
+手順については、[このビデオ](https://www.youtube.com/watch?v=IIQNj-6_tQE_)をチェックしてください。
 
-There is no golden rule of thumb for what number of triangles in a model is ideal, however, we recommend using models with only tens of thousands, rather than hundreds of thousands of triangles. Many complex 3D models can have their triangle count reduced without greatly impacting the way that the model looks. You can do this using the Mesh Decimation tool in Blender. For instructions, check out [this video](https://www.youtube.com/watch?v=IIQNj-6_tQE_)
+## Oculus Quest とモバイルにおける注意
 
-## Oculus Quest & Mobile Notes
-
-Note that some scenes might look different 
-
+一部のシーンでは違って見える場合がありますのでご注意ください。
 
 
 <!-- 
@@ -65,3 +65,6 @@ Note that some scenes might look different
 
 
 gifs can be hard on your scene -->
+
+
+[Optimizing Scenes (original)](https://hubs.mozilla.com/docs/spoke-optimization.html)
