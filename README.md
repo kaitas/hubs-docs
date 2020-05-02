@@ -34,6 +34,8 @@ $ yarn
 $ yarn start
 ```
 
+Note: If your yarn installation cause error in Visual Studio Code on Windows, and Chocolatey is installed, you can start PowerShell in admin mode and install the yarn with `choco install yarn`. For details and other environments, click [here](https://classic.yarnpkg.com/en/docs/install#windows-stable).
+
 ### Directory Structure
 
 Your project file structure should look something like this
