@@ -1,60 +1,50 @@
 ---
 id: spoke-optimization
-title: シーンを最適化する
+title: Optimizing Scenes
 ---
 
-## パフォーマンスを改善する
+## Improving Performance
 
-Hubsシーンを構築する場合、高火力な有線式VRヘッドセットや省電力の携帯電話といった多種多様なデバイス上で適切に実行される必要があります。
-シーンのパフォーマンスは、デバイスのタイプとビジターの接続速度に応じて異なる場合があります。
+When building Hubs scenes, you'll most likely want them to perform well across a wide-range of devices. From high-powered wired-in VR headsets, to low-powered mobile phones; performance of a scene may vary based on the type of device and connection speed of a your visitors. 
 
-あらゆるビジターにとってのパフォーマンスを向上させるひとつの方法は、シーンの複雑さを軽減することです。
-シーン内のオブジェクトの数を減らしたり、使用しているアセットを最適化したりすることで改善します。
-次のセクションでは、アセットを最適化するためにできる手順について簡単に説明します。
+One way to improve performance for everyone is to reduce the complexity of a scene. This could involve reducing the number of objects in a scene or optimizing the assets you are using. In the following section we will briefly cover steps you can take to optimize your assets.
 
-### パフォーマンスの測定
 
-シーンのパフォーマンスを詳しく見るには、VR ステータスメニューを開きます。
-デスクトップの右下にある FPS メーターをクリックします（VR の場合はチャットボックスに /vrstats と入力します）。
-これにより、シーンのロード時間、三角形の数、テクスチャに関する追加情報が表示されます。
+### Measuring performance
+
+To take a closer look at your scene's performance, you can open up the VR Status menu. Click on the FPS meter in the lower right hand corner on desktop (or in VR, type /vrstats into the chat box). This will show you additional information on the load time, number of triangles, and textures in your scene. 
 
 <!-- Insert video of opening performance tools -->
 
-### 画像と動画の最適化
+### Optimizing Images & Videos
 
-非常に大きく詳細な画像や動画は、ウェブ上でのパフォーマンスを低下させる可能性があります。シーンにこの種のメディアが多く含まれている場合、パフォーマンスを維持するために以下のことを行うことができます。
+Very large, detailed images and videos can reduce performance on the web. If you are including a lot of this type of media in your scene, you can do the following to maintain good performance.
 
-* 大きな画像/ビデオのサイズを小さくする
-* ファイルを圧縮する、画像の場合はPhotoshopの "web用に保存" 機能を使用する、またはオンライン画像や動画の圧縮ツールを使用してファイルサイズを縮小する。
-* .png 画像から .jpeg に変換してみてください。ファイルサイズが小さくなる場合があります。
-* GIF をビデオ形式に変換してください。Hubs内でより効果的に動作します。
+* Reduce the dimensions of large images/video
+* Compress the files, use the "save for web" feature in Photoshop for images, or use an online image or video compression tool to reduce the file size
+* Try converting .png images to .jpeg, as these often have smaller file sizes.
+* Convert GIFs to video format, as they run more efficiently in Hubs.
 
-### 3Dモデルの最適化
+### Optimizing 3D Models
 
-複雑な3Dモデルは、シーン内でパフォーマンス問題を引き起こす可能性があります。
-オブジェクトの複雑性に関わる2つの要素がありますが、1つ目はモデル内のテクスチャアセット、
-2つ目は、モデル自体のポリゴンの数です。
-一般的に、モデルがよりリアルに見えるほど、モデルはより複雑になります（これは必ずしもそうとは限りませんが）。
+Complex 3D models can cause performance challenges in your scenes. Two main factors contribute to an object's complexity, firstly, the texture assets in a model, secondly, the number of triangles in the model itself. Typically the more realistic a model appears, the more complex the model is (although this is not always the case). 
 
-SpokeやHubs内でSketchfabやGoogle Polyブラウザを使用して見つかる3Dモデルは、オブジェクトのサイズや複雑さに基づいて、すでにフィルタリングされています。
-しかし、別のダウンロード可能なモデルのパフォーマンスを向上させたい場合は、オブジェクトのテクスチャサイズを小さくするか、ポリゴンの数を減らすことで改善できます。
-これには [Blender](https://www.blender.org/) のようなツールを使うことができます。
+3D models found using the Sketchfab and Google Poly browser in Spoke and Hubs are already filtered based on objects' sizes/complexity. However, if you want to improve the performance of another downloadable model, you can either reduce the objects texture size, or you can reduce the number of triangles. You can use a tool like [Blender]() to do this. 
 
-#### テクスチャサイズを小さくする
+#### Reduce texture size
 
-glbモデルの画像テクスチャのサイズを小さくするには、[GLTFファイルに変換](https://github.com/KhronosGroup/glTF#converters-importers-and-exporters)して、すべてのテクスチャファイルが入った一つのフォルダがあるようにして、Photoshopのようなツールを使って画像テクスチャのサイズを小さくします（例えば画像サイズを半分にしたり、4分の1にしたりします）。
+To reduce the image texture size of a glb model, you can either [covert to a gltf file](), so that there is a folder with all the texture files and reduce the size of the image textures using a tool like photoshop (reduce the size of the images by half, or by a quarter for example). 
 
-また、[Blenderでテクスチャのサイズを最適化するためにできる他のことを動画で紹介しています](https://www.youtube.com/watch?v=6uhAp1m1SXQ)。
+We've also made a [video of other things you can do to optimize the size of your textures in Blender](https://www.youtube.com/watch?v=6uhAp1m1SXQ).
 
-#### ポリゴンの数を減らす
+#### Reduce number of triangles
 
-モデルに対してどれぐらいのポリゴン数が理想的なのか？黄金律はありませんが、（Hubsにおいては）数十万ポリゴンではなく、数万個ポリゴンのモデルを使用することをお勧めします。多くの複雑な3Dモデルでは、モデルの見た目に大きな影響を与えることなく、ポリゴンの数を減らすことができます。
-Blenderではメッシュデシメーションツール（Mesh Decimation tool）を使って行うことができます。
-手順については、[このビデオ](https://www.youtube.com/watch?v=IIQNj-6_tQE_)をチェックしてください。
+There is no golden rule of thumb for what number of triangles in a model is ideal, however, we recommend using models with only tens of thousands, rather than hundreds of thousands of triangles. Many complex 3D models can have their triangle count reduced without greatly impacting the way that the model looks. You can do this using the Mesh Decimation tool in Blender. For instructions, check out [this video](https://www.youtube.com/watch?v=IIQNj-6_tQE_)
 
-## Oculus Quest とモバイルにおける注意
+## Oculus Quest & Mobile Notes
 
-一部のシーンでは違って見える場合がありますのでご注意ください。
+Note that some scenes might look different 
+
 
 
 <!-- 
@@ -65,6 +55,3 @@ Blenderではメッシュデシメーションツール（Mesh Decimation tool�
 
 
 gifs can be hard on your scene -->
-
-
-[Optimizing Scenes (original)](https://hubs.mozilla.com/docs/spoke-optimization.html)
