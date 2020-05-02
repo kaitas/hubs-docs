@@ -1,10 +1,16 @@
-# Mozilla Hubs Docs
+# Mozilla Hubs Docs 日本語版
 
-This repo is for the documentation for [Mozilla Hubs](http://hubs.mozilla.com), and related products such as Hubs Cloud and Spoke. 
+ここは [Mozilla Hubs](http://hubs.mozilla.com) と Hubs Cloud や Spoke などの関連プロダクトのための日本語版ドキュメントのためのリポジトリです。
 
-The documentation is under active development. If there are any changes or updates you recommend, feel free to submit a pull request or let us know in our [Discord Server](http://discord.gg/wHmY4nd).
+このドキュメントは（本家がそうであるように）、まだ活動的に開発中です。
+もしみなさんが変更すべき点や更新すべき点を発見したら、プルリクエストや公式の [Discord Server](http://discord.gg/wHmY4nd) でお伝えください。
 
-This website was created with [Docusaurus](https://docusaurus.io/). 
+（訳者自体は Mozillaの人ではありませんので、日本語でお急ぎの場合は [Twitter@o_ob](https://twitter.com/o_ob)でお伝えください）
+
+このウェブサイトは [Docusaurus](https://docusaurus.io/) で作られています。
+
+This repo is for Japanese documentation for [Mozilla Hubs](http://hubs.mozilla.com), and related products such as Hubs Cloud and Spoke. 
+(Contact me via [Twitter@o_ob](https://twitter.com/o_ob), if you need to communicate me as soon as possible.)
 
 
 # Docusaurus information 
