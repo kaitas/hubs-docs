@@ -40,9 +40,9 @@ $ yarn
 $ yarn start
 ```
 
-### Directory Structure
+### ディレクトリ構造
 
-Your project file structure should look something like this
+プロジェクトファイルの構造は以下のようにしてください
 
 ```
 my-docusaurus/
@@ -62,65 +62,67 @@ my-docusaurus/
     siteConfig.js
 ```
 
-## Editing Content
+## コンテンツの編集
 
-### Editing an existing docs page
+### 既に存在する docs ページ
 
-Edit docs by navigating to `docs/` and editing the corresponding document:
+`docs/` 以下を探して、関連するドキュメントを編集してください：
 
 `docs/doc-to-be-edited.md`
 
 ```markdown
 ---
 id: page-needs-edit
-title: This Doc Needs To Be Edited
+title: 編集されるドキュメントのタイトル
 ---
 
-Edit me...
+以下、本文...
 ```
 
-For more information about docs, click [here](https://docusaurus.io/docs/en/navigation)
+ドキュメントについてのより詳しい情報は、[こちら](https://docusaurus.io/docs/en/navigation)を参照してください。
 
-### Editing an existing blog post
+### 既存のブログ投稿を編集する
 
-Edit blog posts by navigating to `website/blog` and editing the corresponding post:
+`website/blog` 以下を探して、関連する投稿を編集してください：
+
 
 `website/blog/post-to-be-edited.md`
 ```markdown
 ---
 id: post-needs-edit
-title: This Blog Post Needs To Be Edited
+title: 編集されるブログのタイトル
 ---
 
-Edit me...
+以下、本文...
 ```
 
-For more information about blog posts, click [here](https://docusaurus.io/docs/en/adding-blog)
+ブログ投稿についての詳細は、 [こちら](https://docusaurus.io/docs/en/adding-blog)を参照。
 
-## Adding Content
+## コンテンツを追加する
 
-### Adding a new docs page to an existing sidebar
+### 既に存在するサイドバーに新しいドキュメントを追加
 
-1. Create the doc as a new markdown file in `/docs`, example `docs/newly-created-doc.md`:
+1. `/docs` 以下に， `docs/newly-created-doc.md` という形式で markdown形式の新規ドキュメントを追加：
+
 
 ```md
 ---
 id: newly-created-doc
-title: This Doc Needs To Be Edited
+title: （新規作成したドキュメントのタイトル）
 ---
 
-My new content here..
+新規作成した内容を以下..
 ```
 
-1. Refer to that doc's ID in an existing sidebar in `website/sidebar.json`:
+1. `website/sidebar.json` のサイドバー項目において、上記のドキュメントIDを追記：
 
 ```javascript
-// Add newly-created-doc to the Getting Started category of docs
+// ドキュメントの入門(Getting Started)カテゴリに新しく作成したドキュメントを追加
 {
   "docs": {
     "Getting Started": [
       "quick-start",
-      "newly-created-doc" // new doc here
+      "newly-created-doc" // 新規作成したドキュメントがこれ
     ],
     ...
   },
@@ -128,8 +130,8 @@ My new content here..
 }
 ```
 
-For more information about adding new docs, click [here](https://docusaurus.io/docs/en/navigation)
+新規ドキュメント作成についてのより詳しい情報は、[こちら](https://docusaurus.io/docs/en/navigation)をご参照ください。
 
-## Full Documentation
+## ドキュメント全文
 
-Full documentation can be found on the [website](https://docusaurus.io/).
+docusaurus についてのドキュメント全文は [website](https://docusaurus.io/) をご参照ください。
