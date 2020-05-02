@@ -65,8 +65,8 @@ AWSで Hubs Cloud のスタックを作成する場合、以下のドメイン�
 
 #### レシピ:
 
-- Register and set up `myhub.link` on Route 53.
-- Register and set up an *internal domain* on Route 53. This can be any name you want, and will not be seen by users. For example `mysite-internal.com`.
+- Purchase, register, and set up `myhub.link` on Amazon Route 53.
+- Purchase, register, and set up an *internal domain* on Amazon Route 53. This can be any name you want, and will not be seen by users. For example `mysite-internal.com`.
 - Specify the following when creating the stack:
   - **Site Domain Name**: `hub.mysite.com`
   - **Site is Set Up On Route 53**: `Yes`
@@ -83,9 +83,9 @@ AWSで Hubs Cloud のスタックを作成する場合、以下のドメイン�
 
 #### レシピ:
 
-- Register and set up `myhub.link` on Route 53.
-- Register and set up an *internal domain* on Route 53. This can be any name you want, and will not be seen by users. For example `mysite-internal.com`.
-- Register and set up an *email domain* on Route 53. This will be used for outgoing email. If you have an existing email provider, you don't need a custom email domain and can specify your internal domain. For example `mysite-mail.com`.
+- Purchase, register, and set up `myhub.link` on Amazon Route 53.
+- Purchase, register, and set up an *internal domain* on Amazon Route 53. This can be any name you want, and will not be seen by users. For example `mysite-internal.com`.
+- If you want a domain other than the internal domain for sent email, purchase, register and set up an *email domain* on Route 53. This will be used for outgoing email. If you have an existing email provider, you don't need a custom email domain and can specify your internal domain. For example `mysite-mail.com`.
 - Specify the following when creating the stack:
   - **Site Domain Name**: `mysite.com`
   - **Site is Set Up On Route 53**: `No`
@@ -103,9 +103,9 @@ AWSで Hubs Cloud のスタックを作成する場合、以下のドメイン�
 
 #### レシピ:
 
-- Register and set up `myhub.link` on Route 53.
-- Register and set up an *internal domain* on Route 53. This can be any name you want, and will not be seen by users. For example `mysite-internal.com`.
-- Register and set up an *email domain* on Route 53. This will be used for outgoing email. If you have an existing email provider, you don't need a custom email domain and can specify your internal domain. For example `mysite-mail.com`.
+- Purchase, register, and set up `myhub.link` on Amazon Route 53.
+- Purchase, register, and set up an *internal domain* on Amazon Route 53. This can be any name you want, and will not be seen by users. For example `mysite-internal.com`.
+- If you want a domain other than the internal domain for sent email, purchase, register and set up an *email domain* on Route 53. This will be used for outgoing email. If you have an existing email provider, you don't need a custom email domain and can specify your internal domain. For example `mysite-mail.com`.
 - Specify the following when creating the stack:
   - **Site Domain Name**: `hub.mysite.com`
   - **Site is Set Up On Route 53**: `No`
