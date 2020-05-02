@@ -1,8 +1,8 @@
-# Mozilla Hubs Docs 日本語版
+# Mozilla Hubs 日本語版ドキュメント
 
 ここは [Mozilla Hubs](http://hubs.mozilla.com) と Hubs Cloud や Spoke などの関連プロダクトのための日本語版ドキュメントのためのリポジトリです。
 
-このドキュメントは（本家がそうであるように）、まだ活動的に開発中です。
+このドキュメントは（[本家](https://github.com/MozillaReality/hubs-docs)がそうであるように）、まだ活動的に開発中です。
 もしみなさんが変更すべき点や更新すべき点を発見したら、プルリクエストや公式の [Discord Server](http://discord.gg/wHmY4nd) でお伝えください。
 
 （訳者自体は Mozillaの人ではありませんので、日本語でお急ぎの場合は [Twitter@o_ob](https://twitter.com/o_ob)でお伝えください）
