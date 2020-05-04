@@ -40,6 +40,7 @@ const siteConfig = {
   headerLinks: [
     {doc: 'welcome', label: 'Docs'},
     {href: "https://github.com/mozilla/hubs", label: "GitHub" },
+    {languages: true },
     {page: 'help', label: 'Help'},
   ],
 

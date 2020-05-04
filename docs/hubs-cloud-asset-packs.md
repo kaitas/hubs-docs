@@ -1,41 +1,41 @@
 ---
 id: hubs-cloud-asset-packs
-title: Recommended Asset Packs
+title: おすすめのアセットパック
 sidebar_label: Asset Packs
 ---
 
-We've compiled some avatar and scene collections you can easily import into your hub. This content is [Creative Commons 3](https://creativecommons.org/licenses/by/3.0/us/) licensed. License compliance with attribution is handled automatically by Hubs Cloud when the content is surfaced to users.
+Hubsに簡単にインポートできるアバターとシーンのコレクションをまとめてあります。 このコンテンツは [Creative Commons 3](https://creativecommons.org/licenses/by/3.0/deed.ja) ライセンスとなります。 帰属とライセンス準拠は、コンテンツがユーザーに表示されたとき、Hubs Cloudによって自動的にあつかわれることになります。
 
-To import these packs, simply specify the URL for the pack specified below in the [Import Content](./hubs-cloud-importing-content.md) tool in the [Admin Console](./hubs-cloud-getting-started.md). Once you input the URL you will be able to preview the contents of the pack and choose which items to import.
+これらのアセットパックをインポートするには、[Import Content](./hubs-cloud-importing-content.md)ツールの[Admin Console](./hubs-cloud-getting-started.md)で、以下に指定したパックのURLを指定するだけです。 URLを入力すると、パックの内容をプレビューし、インポートするアイテムを選択することができます。
 
-## Avatar Packs
+## アバターパック
 
-**Color Robots** - A collection of robot avatars in basic colors.
+**カラーロボット** - ベーシックカラーのロボットアバター集です。
 
 https://raw.githubusercontent.com/mozilla/hubs-cloud/master/asset-packs/color-robots.pack
 
-**Clothed Robots** - - A collection of robot avatars that are wearing clothing. 
+**服を着たロボット** - 服を着たロボットアバターのコレクション。
 
 https://raw.githubusercontent.com/mozilla/hubs-cloud/master/asset-packs/clothed-robots.pack
 
-**Stylized Robots** - A collection of robot avatars that are stylized in abstract skins.
+<strong x-id = "1">定型化されたロボット</strong> - 抽象されたスキンで定型化されたロボットアバターのコレクション。
 
 https://raw.githubusercontent.com/mozilla/hubs-cloud/master/asset-packs/stylized-robots.pack
 
-## Scene Packs
+## シーンパック
 
-**Meeting Scenes** - A collection of scenes that can be used for simple meetings.
+**ミーティングシーン集** - シンプルなミーティングに使えるシーンコレクション。
 
 https://raw.githubusercontent.com/mozilla/hubs-cloud/master/asset-packs/meeting-scenes.pack
 
-**Scenic Scenes** - A collection of outdoor or landscape scenes.
+**風光明媚なシーン** - 屋外や風景シーンのコレクション。
 
 https://raw.githubusercontent.com/mozilla/hubs-cloud/master/asset-packs/scenic-scenes.pack
 
-## More packs
+## その他のパック
 
-The full set of packs managed by Mozilla can be found in our [Hubs Cloud Github Repo](https://github.com/mozilla/hubs-cloud/tree/master/asset-packs).
+Mozillaが管理するフルセットのパックの完全なセットは、[ Hubs Cloud Github Repo ](https://github.com/mozilla/hubs-cloud/tree/master/asset-packs)にあります。
 
-## Making your own packs
+## 独自のパックを作るには
 
-Making a pack is simple. A pack is just a simple text file with a `.pack` file extension that is a list of URLs, on per line, pointing to avatar or scene URLs on any existing hub on the web. (Including your own!) Feel free to share your own packs! If you have a pack you'd like Mozilla to consider sharing, please [contact us](mailto:hubs@mozilla.com) or open a PR on our [Hubs Cloud Github Repo](https://github.com/mozilla/hubs-cloud/tree/master/asset-packs).
+パックを作るのは簡単です。 パックはファイル拡張子が `.pack ` のシンプルなテキストファイルであり、既存のWeb上のHubsにあるアバターやシーンのURLを指すURLの行ごとのリストです。 (みなさんの作品を含めてください！) 皆さんの作品をパックにしてシェアしましょう。 Mozilla に共有を検討してもらいたいパックがあれば、[こちらまでご連絡](mailto:hubs@mozilla.com)もしくは、[Hubs Cloud Github Repo](https://github.com/mozilla/hubs-cloud/tree/master/asset-packs) でプルリクエストをください。
