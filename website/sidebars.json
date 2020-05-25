@@ -31,6 +31,7 @@
     ],
     "For Creators": [
       "creators-advanced-avatar-customization",
+      "creators-linking-rooms",
       "creators-using-the-blender-gltf-exporter",
       "spoke-optimization",
       "content-guidelines"
@@ -70,10 +71,9 @@
       "hubs-cloud-aws-troubleshooting",
       "hubs-cloud-aws-known-issues",
       "hubs-cloud-aws-architecture",
-      "hubs-cloud-aws-costs"
+      "hubs-cloud-aws-costs",
+      "hubs-cloud-aws-estimated-cost-charts"
     ],
-    "Hubs Cloud DigitalOcean": [
-      "hubs-cloud-do-quick-start"
-    ]
+    "Hubs Cloud DigitalOcean": ["hubs-cloud-do-quick-start"]
   }
 }
